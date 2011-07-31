@@ -88,19 +88,19 @@ public class RFCTool {
 	protected volatile WorkingMgr wkr = null;
 
 	public static final PeriodFormatter DAYS_HOURS_MINS = new PeriodFormatterBuilder()
-    	.appendDays()
-    	.appendSuffix("d")
-    	.appendSeparator(" ")
-    	.appendHours()
-    	.appendSuffix("h")
-    	.appendSeparator(" ")
-    	.appendMinutes()
-    	.appendSuffix("m")
-    	.appendSeparator(" ")
-    	.appendSeconds()
-    	.appendSuffix("s")
-    	.toFormatter()
-    ;
+		.appendDays()
+		.appendSuffix("d")
+		.appendSeparator(" ")
+		.appendHours()
+		.appendSuffix("h")
+		.appendSeparator(" ")
+		.appendMinutes()
+		.appendSuffix("m")
+		.appendSeparator(" ")
+		.appendSeconds()
+		.appendSuffix("s")
+		.toFormatter()
+	;
 
 	public static final Preferences PREFS = Preferences.userNodeForPackage(RFCTool.class);
 
