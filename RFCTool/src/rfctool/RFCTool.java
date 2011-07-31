@@ -176,7 +176,7 @@ public class RFCTool {
 		ExecutorService es = Executors.newSingleThreadExecutor();
 		es.execute(new Runnable() {
 			@Override
-			public void run() {		
+			public void run() {
 				updateAPI();
 			}
 		});
@@ -367,7 +367,7 @@ public class RFCTool {
 				ExecutorService es = Executors.newSingleThreadExecutor();
 				es.execute(new Runnable() {
 					@Override
-					public void run() {		
+					public void run() {
 						updateAPI();
 					}
 				});
@@ -542,7 +542,7 @@ public class RFCTool {
 				synchronized (stateLock) {
 					userStatus = Status.API_KEY_INVALID;
 				}
-				return;				
+				return;
 			}
 
 			InputStream content = (InputStream) userStatsURL.getContent();
